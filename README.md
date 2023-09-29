@@ -42,7 +42,7 @@ Réalisé dans le cadre du projet C en 1ère année à l'Ensimag (2022-2023)
     - Tests unitaires
         - mode standard et mode verbose (utiliser `-hv`) pour voir les détails
         <div align="center">
-            ![tests unitaires printscreen](https://github.com/JonathanMAROTTA/JPEG-Decoder/blob/master/pictures/tests_unitaires.png?raw=true)
+	   <img alt="tests unitaires printscreen" src="https://github.com/JonathanMAROTTA/JPEG-Decoder/blob/master/pictures/tests_unitaires.png" margin="center">
         </div>
 
 ## Usage
