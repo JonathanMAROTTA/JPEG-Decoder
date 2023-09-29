@@ -2,7 +2,7 @@
 
 Réalisé dans le cadre du projet C en 1ère année à l'Ensimag (2022-2023)
 
-![JPEG encoder/decoder architecture](http://JonathanMAROTTA.github.io/JPEG_encoder_decoder_architecture_color_enforced.png?raw=true)
+![JPEG encoder/decoder architecture](./pictures/JPEG_encoder_decoder_architecture_color_enforced.png?raw=true)
 
 ## Authors
 
@@ -21,16 +21,16 @@ Réalisé dans le cadre du projet C en 1ère année à l'Ensimag (2022-2023)
         `-hv` &nbsp;&nbsp;&nbsp;&nbsp; mode highly verbose  
         `--force-grayscale` &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; force la conversion en niveau de gris  
 
-        ![--force-grayscale printscreen](http://JonathanMAROTTA.github.io/--force-grayscale.png?raw=true)
+        ![--force-grayscale printscreen](./pictures/--force-grayscale.png?raw=true)
 
     - Optimisations pour améliorer le temps d'exécution et l'utilisation de la mémoire
-        - fast_IDCT d'après [PRACTICAL FAST 1-D DCT ALGORITHMS WITH 11 MULTIPLICATIONS (Loeffler *et al.*)](https://formationc.pages.ensimag.fr/projet/jpeg/jpeg/distrib/loeffler.pdf)
+        - fast_IDCT d'après [PRACTICAL FAST 1-D DCT ALGORITHMS WITH 11 MULTIPLICATIONS (Loeffler *et al.*)](https://github.com/JonathanMAROTTA/JPEG-Decoder/blob/master/pictures/loeffler.pdf)
         - optimisation de l'utilisation de la mémoire (écriture et accès)  
         - vectorisation via utilisation des instructions SIMD AVX et AVX2 si disponibles (vérification de la possibilité via Makefile)
         - tentatives avec multiprocessing infructueuses (certainement dû à la granularité du travail et la gestion des synchronisations)
 
         <div align="center">
-            <img alt="meme Asterix&Obélix FREE" src="http://JonathanMAROTTA.github.io/Asterix30GalereObelixRep-1024x1010.jpg" margin="center" width="300" height="300">
+            <img alt="meme Asterix&Obélix FREE" src="https://github.com/JonathanMAROTTA/JPEG-Decoder/blob/master/pictures/Asterix30GalereObelixRep-1024x1010.jpg" margin="center" width="300" height="300">
         </div>
 
     - gestion des erreurs
@@ -42,7 +42,7 @@ Réalisé dans le cadre du projet C en 1ère année à l'Ensimag (2022-2023)
     - Tests unitaires
         - mode standard et mode verbose (utiliser `-hv`) pour voir les détails
         <div align="center">
-            ![tests unitaires printscreen](http://JonathanMAROTTA.github.io/tests_unitaires.png?raw=true)
+            ![tests unitaires printscreen](./pictures/tests_unitaires.png?raw=true)
         </div>
 
 ## Usage
@@ -59,7 +59,7 @@ make tests
 ./tests/ycbcr2rgb-test [-hv]
 (Note: execute tests from `team6/` directory !)
 ```
-![jpeg2ppm usage printscreen](http://JonathanMAROTTA.github.io/jpeg2ppm-usage.png?raw=true)
+![jpeg2ppm usage printscreen](./pictures/jpeg2ppm-usage.png?raw=true)
 
 
 ## Architecture du code
@@ -157,13 +157,13 @@ make tests
 	    ```
 
 - schéma "sitemap" de la struct JPEG
-![struct JPEG - sitemap visualization](http://JonathanMAROTTA.github.io/jpeg2ppm_sitemap_graph_6_layer-1.png?raw=true)
+![struct JPEG - sitemap visualization](./pictures/jpeg2ppm_sitemap_graph_6_layer-1.png?raw=true)
 
 
 ## Architecture fichier JPEG
 
-![architecture fichier JPEG](http://JonathanMAROTTA.github.io/jpegrgb_dissected.png?raw=true)
+![architecture fichier JPEG](./pictures/jpegrgb_dissected.png?raw=true)
 
 ## Diagramme de Gantt
 
-![Diagramme de Gantt](http://JonathanMAROTTA.github.io/gantt_chart.png?raw=true)
+![Diagramme de Gantt](./pictures/gantt_chart.png?raw=true)
